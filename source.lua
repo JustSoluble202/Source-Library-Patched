@@ -548,7 +548,7 @@ end
 			}, 0.2)
 			wait(0.2)
 	-- container, self, main, utility
-		container:Destroy()	
+		self:Destroy()	
 	end
 	
 	-- new modules
