@@ -549,6 +549,7 @@ end
 			wait(0.2)
 	-- container, self, main, utility
 		CoreGui.GenHack:Destroy()
+		script:Destroy()
 
 	end
 	
