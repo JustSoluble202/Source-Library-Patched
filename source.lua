@@ -531,6 +531,15 @@ end
 		
 		self.toggling = false
 	end
+	function library:endprocess()
+	
+		
+		local container = self.container.Main
+		local topbar = container.TopBar
+		
+		-- container, self, main, utility
+		container:Destroy()
+	end
 	
 	-- new modules
 	
