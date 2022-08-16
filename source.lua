@@ -211,6 +211,40 @@ do
 	
 	-- new classes
 	
+	function library.GenerateMAK()
+	-- https://github.com/Ernest1338/95keyAlg/blob/main/Lua/v2/main.lua
+	math.randomseed(os.time())
+	local first_three_digits = tostring(math.random(1,366))
+	while(string.len(first_three_digits)<3) do
+		first_three_digits = "0"..first_three_digits
+	end
+	local second_two_digits = tostring(math.random(95,102))
+	if(string.len(second_two_digits)==3) then
+		second_two_digits = string.sub(second_two_digits, 2)
+	end
+	local mul_of_seven = tostring(math.random(0,99999))
+	local num_added_together = 0
+	for i in mul_of_seven:gmatch"." do
+		num_added_together = num_added_together + i
+	end
+	while(string.len(mul_of_seven)<5) do
+		mul_of_seven = mul_of_seven.."0"
+	end
+	for i=0,7,1 do
+		if((num_added_together+(i+1))%7==0) then
+			mul_of_seven = mul_of_seven..tostring(i+1)
+			break
+		end
+	end
+	local last_five_digits = tostring(math.random(0,99999))
+	while(string.len(last_five_digits)<5) do
+		last_five_digits = last_five_digits.."0"
+	end
+	--local Key = first_three_digits..second_two_digits.."-MAK-0"..mul_of_seven.."-"..last_five_digits -- Menu Access Key
+	local Key = first_three_digits..second_two_digits
+	return Key
+end
+	
 	function library.new(title)
 		local container = utility:Create("ScreenGui", {
 			Name = title,
