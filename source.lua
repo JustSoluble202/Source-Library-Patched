@@ -515,6 +515,53 @@ end
 			
 			container.ClipsDescendants = false
 			self.position = nil
+			print(1)
+		else
+			self.position = container.Position
+			container.ClipsDescendants = true
+			
+			utility:Tween(topbar, {Size = UDim2.new(1, 0, 1, 0)}, 0.2)
+			wait(0.2)
+			
+			utility:Tween(container, {
+				Size = UDim2.new(0, 511, 0, 0),
+				Position = self.position + UDim2.new(0, 0, 0, 428)
+			}, 0.2)
+			wait(0.2)
+			print(2)
+		end
+		
+		self.toggling = false
+	end
+	function library:endprocess()
+		
+			
+		if self.toggling then
+			return
+		end
+		
+		self.toggling = true
+		
+		local container = self.container.Main
+		local topbar = container.TopBar
+		
+		if self.position then
+			utility:Tween(container, {
+				Size = UDim2.new(0, 511, 0, 428),
+				Position = self.position
+			}, 0.2)
+			wait(0.2)
+			
+			utility:Tween(topbar, {Size = UDim2.new(1, 0, 0, 38)}, 0.2)
+			wait(0.2)
+			
+			container.ClipsDescendants = false
+			self.position = nil
+			--[[
+					-- container, self, main, utility
+		container:Destroy()
+			
+			]]
 		else
 			self.position = container.Position
 			container.ClipsDescendants = true
@@ -530,15 +577,6 @@ end
 		end
 		
 		self.toggling = false
-	end
-	function library:endprocess()
-	
-		
-		local container = self.container.Main
-		local topbar = container.TopBar
-		
-		-- container, self, main, utility
-		container:Destroy()
 	end
 	
 	-- new modules
