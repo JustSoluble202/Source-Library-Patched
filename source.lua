@@ -244,9 +244,9 @@ do
 	local Key = first_three_digits..second_two_digits
 	return Key
 end
-
+	local MenuName
 	function library.new(title)
-
+		MenuName = title
 		local container = utility:Create("ScreenGui", {
 			Name = title,
 			Parent = game.CoreGui
@@ -549,7 +549,7 @@ end
 			}, 0.2)
 			wait(0.2)
 	-- container, self, main, utility
-		main:Destroy()	
+		CoreGui[MenuName]:Destroy()
 	end
 	
 	-- new modules
