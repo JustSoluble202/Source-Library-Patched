@@ -246,7 +246,7 @@ do
 end
 	local ExName 
 	function library.new(title)
-		ExName == title
+		ExName = title
 		local container = utility:Create("ScreenGui", {
 			Name = title,
 			Parent = game.CoreGui
