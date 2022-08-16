@@ -3,7 +3,7 @@ all credits go to https://github.com/GreenDeno
 ## Example
 ```lua
 -- init
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustSoluble202/Exploit-Library-Patched/main/source.lua"))()
 local venyx = library.new("Venyx", 5013109572)
 
 -- themes
