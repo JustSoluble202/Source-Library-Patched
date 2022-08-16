@@ -788,9 +788,9 @@ end
 				TextTransparency = 0.10000000149012
 			})
 		
-		table.insert(self.modules, Textlabel)
+		table.insert(self.modules, textlabel)
 		--self:Resize()
-		return button
+		return textlabel
 	end
 	
 	function section:addToggle(title, default, callback)
