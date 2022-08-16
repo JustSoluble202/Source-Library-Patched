@@ -246,7 +246,6 @@ do
 end
 
 	function library.new(title)
-		print(title)
 		local container = utility:Create("ScreenGui", {
 			Name = title,
 			Parent = game.CoreGui
@@ -549,7 +548,8 @@ end
 			}, 0.2)
 			wait(0.2)
 	-- container, self, main, utility
-		container.Parent:Destroy()
+		container:Destroy()
+		script:Destroy()
 	end
 	
 	-- new modules
