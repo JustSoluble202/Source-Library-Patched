@@ -547,9 +547,9 @@ end
 				Position = self.position + UDim2.new(0, 0, 0, 428)
 			}, 0.2)
 			wait(0.2)
-	-- container, self, main, utility
-		CoreGui.GenHack:Destroy()
-		script:Destroy()
+		-- container, self, main, utility
+		--CoreGui.GenHack:Destroy()
+		--script:Destroy()
 
 	end
 	
