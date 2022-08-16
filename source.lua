@@ -790,10 +790,6 @@ end
 		
 		table.insert(self.modules, Textlabel)
 		--self:Resize()
-		
-		local text = Textlabel.Title
-		local debounce
-		
 		return button
 	end
 	
