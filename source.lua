@@ -775,7 +775,7 @@ end
 		return button
 	end
 	---------------------------------------------------------------------------------------------------------------------------------------
-	function section:addTextlabel(title, callback)
+	function section:addTextlabel(title)
 		local button = utility:Create("ImageButton", {
 			Name = "Button",
 			Parent = self.container,
@@ -804,34 +804,7 @@ end
 		table.insert(self.modules, textlabel)
 		--self:Resize()
 		
-		local text = button.Title
-		local debounce
-		
-		button.MouseButton1Click:Connect(function()
-			
-			if debounce then
-				return
-			end
-			
-			-- animation
-			utility:Pop(button, 10)
-			
-			debounce = true
-			text.TextSize = 0
-			utility:Tween(button.Title, {TextSize = 14}, 0.2)
-			
-			wait(0.2)
-			utility:Tween(button.Title, {TextSize = 12}, 0.2)
-			
-			if callback then
-				callback(function(...)
-					self:updateButton(button, ...)
-				end)
-			end
-			
-			debounce = false
-		end)
-		
+		local text = button.Title		
 		return textlabel
 	end
 	
