@@ -925,7 +925,7 @@ end
 				utility:Create("TextBox", {
 					Name = "Textbox", 
 					BackgroundTransparency = 1,
-					TextTruncate = Enum.TextTruncate.AtEnd,
+					--TextTruncate = Enum.TextTruncate.AtEnd,
 					Position = UDim2.new(0, 5, 0, 0),
 					Size = UDim2.new(1, -10, 1, 0),
 					ZIndex = 3,
