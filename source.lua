@@ -659,7 +659,6 @@ end
 		utility:Tween(notification.Flash, {
 			Size = UDim2.new(0, 0, 0, 60),
 			Position = UDim2.new(1, 0, 0, 0)
-			BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647) -- CHANGED THIS LN. 662
 		}, 0.2)
 		
 		-- callbacks
