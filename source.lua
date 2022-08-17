@@ -775,7 +775,7 @@ end
 		return button
 	end
 	---------------------------------------------------------------------------------------------------------------------------------------
-	function section:addTextLabel(title, callback)
+	function section:addTextlabel(title, callback)
 		local button = utility:Create("ImageButton", {
 			Name = "Button",
 			Parent = self.container,
@@ -801,7 +801,7 @@ end
 			})
 		})
 		
-		table.insert(self.modules, button)
+		table.insert(self.modules, textlabel)
 		--self:Resize()
 		
 		local text = button.Title
