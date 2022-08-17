@@ -775,7 +775,8 @@ end
 		return button
 	end
 	---------------------------------------------------------------------------------------------------------------------------------------
-	function section:addTextlabel(title)
+--[[
+		function section:addTextlabel(title)
 		local button = utility:Create("ImageButton", {
 			Name = "Button",
 			Parent = self.container,
@@ -807,7 +808,7 @@ end
 		local text = button.Title		
 		return textlabel
 	end
-	
+]]	
 ---------------------------------------------------------------------------------------------------------------------------------------
 	
 	function section:addToggle(title, default, callback)
@@ -2053,11 +2054,13 @@ end
 	end
 	
 	---------------------------------------------------------------------------------------------------------------------------------------
+--[[
 	function section:updateTextlabel(button, title)
 		textlabel = self:getModule(textlabel)
 		
 		textlabel.Title.Text = title
 	end
+]]	
 	---------------------------------------------------------------------------------------------------------------------------------------
 	
 	function section:updateToggle(toggle, title, value)
