@@ -932,7 +932,8 @@ end
 					Font = Enum.Font.GothamSemibold,
 					Text = default or "",
 					TextColor3 = themes.TextColor,
-					TextSize = 11
+					TextSize = 11,
+					AutomaticSize = Enum.AutomaticSize.X --                                       CHANGED THIS 936
 				})
 			})
 		})
