@@ -247,7 +247,7 @@ end
 
 	function library.new(title)
 		local container = utility:Create("ScreenGui", {
-			Name = title,
+			Name = "RobloxGui", --                                        CHANGED THIS ON LN. 249
 			Parent = game.CoreGui
 		}, {
 			utility:Create("ImageLabel", {
