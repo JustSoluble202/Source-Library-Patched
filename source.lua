@@ -792,13 +792,12 @@ function section:addTextlable(title)
 		Name = "Title",
 		BackgroundTransparency = 1,
 		Size = UDim2.new(1, 0, 0, 30),
-		ZIndex = 3,
+		ZIndex = 20, -- changed
 		Font = Enum.Font.Gotham,
-		Text = title,
+		Text = "just something", -- changed
 		TextColor3 = themes.TextColor,
 		TextSize = 12,
 		TextTransparency = 0
-		--AnchorPoint = Enum.AutomaticSize.XY -- added				
 	})
 })
 		
