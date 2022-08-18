@@ -776,19 +776,7 @@ end
 	end
 	---------------------------------------------------------------------------------------------------------------------------------------
 function section:addTextlable(title)
-		local textlable = utility:Create("ImageButton", {
-			Name = "Button",
-			Parent = self.container,
-			BackgroundTransparency = 1,
-			BorderSizePixel = 0,
-			Size = UDim2.new(1, 0, 0, 30),
-			ZIndex = 2,
-			Image = "rbxassetid://5028857472",
-			ImageColor3 = themes.DarkContrast,
-			ScaleType = Enum.ScaleType.Slice,
-			SliceCenter = Rect.new(2, 2, 298, 298)
-		}, {
-			utility:Create("TextLabel", {
+		local textlable = utility:Create("TextLabel", {
 				Name = "Title",
 				BackgroundTransparency = 1,
 				Size = UDim2.new(1, 0, 1, 0),
@@ -799,12 +787,11 @@ function section:addTextlable(title)
 				TextSize = 12,
 				TextTransparency = 0.10000000149012
 			})
-		})
 		
 		table.insert(self.modules, textlable)
 		--self:Resize()
 		
-		local text = textlable.Title		
+		--local text = textlable.Title		
 		return textlable
 	end
 ---------------------------------------------------------------------------------------------------------------------------------------
