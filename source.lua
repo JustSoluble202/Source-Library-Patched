@@ -787,17 +787,19 @@ function section:addTextlable(title)
 	ImageColor3 = themes.DarkContrast,
 	ScaleType = Enum.ScaleType.Slice,
 	SliceCenter = Rect.new(2, 2, 298, 298)
+	AnchorPoint = Enum.AutomaticSize.XY	-- added
 }, {
 	utility:Create("TextLabel", {
 		Name = "Title",
 		BackgroundTransparency = 1,
 		Size = UDim2.new(1, 0, 0, 30),
-		ZIndex = 20, -- changed
+		ZIndex = 3,
 		Font = Enum.Font.Gotham,
-		Text = "just something", -- changed
+		Text = title,
 		TextColor3 = themes.TextColor,
 		TextSize = 12,
 		TextTransparency = 0
+		AnchorPoint = Enum.AutomaticSize.XY -- added				
 	})
 })
 		
