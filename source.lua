@@ -794,7 +794,7 @@ function section:addTextlable(title)
 		Size = UDim2.new(1, 0, 0, 30),
 		ZIndex = 20, -- changed
 		Font = Enum.Font.Gotham,
-		Text = title, -- changed
+		Text = "newed", -- changed
 		TextColor3 = themes.TextColor,
 		TextSize = 12,
 		TextTransparency = 0
