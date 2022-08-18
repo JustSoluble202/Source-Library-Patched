@@ -798,15 +798,13 @@ function section:addTextlable(title)
 		TextColor3 = themes.TextColor,
 		TextSize = 12,
 		TextTransparency = 0
-		AutomaticSize = Enum.AutomaticSize.Y -- patched
+		--AutomaticSize = Enum.AutomaticSize.Y -- patched
 	})
 })
 		
 		table.insert(self.modules, textlable)
 		--self:Resize()
 		
-		
-		print("ok we got somewhere")--local text = textlable.Title		
 		return textlable
 	end
 ---------------------------------------------------------------------------------------------------------------------------------------
