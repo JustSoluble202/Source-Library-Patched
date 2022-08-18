@@ -776,7 +776,7 @@ end
 	end
 	---------------------------------------------------------------------------------------------------------------------------------------
 function section:addTextlable(title)
-		local button = utility:Create("ImageButton", {
+		local textlable = utility:Create("ImageButton", {
 			Name = "Button",
 			Parent = self.container,
 			BackgroundTransparency = 1,
