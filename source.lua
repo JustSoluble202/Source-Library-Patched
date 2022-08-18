@@ -778,14 +778,14 @@ end
 function section:addTextlable(title)
 		local textlable = utility:Create("TextLabel", {
 				Name = "Title",
-				BackgroundTransparency = 1,
+				BackgroundTransparency = 0,
 				Size = UDim2.new(1, 0, 0, 30),
 				ZIndex = 3,
 				Font = Enum.Font.Gotham,
 				Text = "just something", -- HERE
 				TextColor3 = themes.TextColor,
 				TextSize = 12,
-				TextTransparency = 0.10000000149012
+				TextTransparency = 0
 			})
 		
 		table.insert(self.modules, textlable)
