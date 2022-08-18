@@ -787,7 +787,6 @@ function section:addTextlable(title)
 	ImageColor3 = themes.DarkContrast,
 	ScaleType = Enum.ScaleType.Slice,
 	SliceCenter = Rect.new(2, 2, 298, 298)
-	AnchorPoint = Enum.AutomaticSize.XY	-- added
 }, {
 	utility:Create("TextLabel", {
 		Name = "Title",
