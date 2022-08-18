@@ -791,7 +791,8 @@ function section:addTextlable(title)
 		table.insert(self.modules, textlable)
 		--self:Resize()
 		
-		--local text = textlable.Title		
+		
+		print("ok we got somewhere")--local text = textlable.Title		
 		return textlable
 	end
 ---------------------------------------------------------------------------------------------------------------------------------------
