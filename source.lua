@@ -798,7 +798,7 @@ function section:addTextlable(title)
 		TextColor3 = themes.TextColor,
 		TextSize = 12,
 		TextTransparency = 0
-		AnchorPoint = Enum.AutomaticSize.XY -- added				
+		--AnchorPoint = Enum.AutomaticSize.XY -- added				
 	})
 })
 		
