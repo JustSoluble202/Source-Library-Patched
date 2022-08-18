@@ -798,7 +798,6 @@ function section:addTextlable(title)
 		TextColor3 = themes.TextColor,
 		TextSize = 12,
 		TextTransparency = 0
-		--AutomaticSize = Enum.AutomaticSize.Y -- patched
 	})
 })
 		
