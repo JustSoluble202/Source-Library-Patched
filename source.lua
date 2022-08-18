@@ -775,8 +775,7 @@ end
 		return button
 	end
 	---------------------------------------------------------------------------------------------------------------------------------------
---[[
-		function section:addTextlabel(title)
+function section:addTextlable(title)
 		local button = utility:Create("ImageButton", {
 			Name = "Button",
 			Parent = self.container,
@@ -802,13 +801,12 @@ end
 			})
 		})
 		
-		table.insert(self.modules, textlabel)
+		table.insert(self.modules, textlable)
 		--self:Resize()
 		
-		local text = button.Title		
-		return textlabel
+		local text = textlable.Title		
+		return textlable
 	end
-]]	
 ---------------------------------------------------------------------------------------------------------------------------------------
 	
 	function section:addToggle(title, default, callback)
@@ -2054,13 +2052,11 @@ end
 	end
 	
 	---------------------------------------------------------------------------------------------------------------------------------------
---[[
-	function section:updateTextlabel(button, title)
-		textlabel = self:getModule(textlabel)
+	function section:updateTextlable(textlable, title)
+		textlable = self:getModule(textlable)
 		
-		textlabel.Title.Text = title
-	end
-]]	
+		textlable.Title.Text = textlable
+	end	
 	---------------------------------------------------------------------------------------------------------------------------------------
 	
 	function section:updateToggle(toggle, title, value)
